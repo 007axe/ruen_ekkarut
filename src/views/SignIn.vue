@@ -17,8 +17,10 @@
 </template>
   
 <script setup>
+
 import { ref } from 'vue'
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
+import { signInWithEmailAndPassword } from 'firebase/auth'
+import { auth } from '../firebase/init.js'
 import { useRouter } from 'vue-router'
 
 const email = ref('')
@@ -27,7 +29,7 @@ const errMsg = ref()
 const router = useRouter()
 
 const register = () => {
-    const auth = getAuth()
+
     signInWithEmailAndPassword(auth, email.value, password.value)
         .then((data) => {
             console.log("Successfully signed in!")

@@ -16,7 +16,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { auth } from '../firebase/init.js'
 import { useRouter } from 'vue-router'
 
 
@@ -25,7 +26,7 @@ const password = ref('')
 const router = useRouter()
 
 const register = () => {
-    createUserWithEmailAndPassword(getAuth(), email.value, password.value)
+    createUserWithEmailAndPassword(auth, email.value, password.value)
         .then((data) => {
             console.log("Successfully registered!")
             router.push('/admin')
@@ -38,7 +39,7 @@ const register = () => {
 
 const signInWithGoogle = () => {
     const provider = new GoogleAuthProvider()
-    signInWithPopup(getAuth(), provider)
+    signInWithPopup(auth, provider)
         .then((result) => {
             console.log(result.user)
             router.push('/admin')
