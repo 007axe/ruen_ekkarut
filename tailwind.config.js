@@ -6,7 +6,12 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'Chonburi': ['"Chonburi"', 'cursive'],
+        'Kanit': ['"Kanit"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

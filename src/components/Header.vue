@@ -1,9 +1,9 @@
 <script setup>
 import { reactive } from 'vue'
-import ConTact from '../components/ConTact.vue';
+
 
 const arr = reactive(["เรือนเอกรุจต์", "Ruen Ekkarut"])
-
+const img = ('/public/favicon.jpeg')
 </script>
 
 <template>
@@ -11,16 +11,16 @@ const arr = reactive(["เรือนเอกรุจต์", "Ruen Ekkarut"]
     <div class="w-full h-full flex  justify-center items-center md:backdrop-blur bg-[rgba(250,250,250,0.1)] dark:bg-[rgba(0,0,0,0.9)]">
       <div class="container flex md:flex-row flex-col md:justify-between justify-center items-center  mx-auto h-full">
       <div class="md:w-[40%] w-[80%] txet-center">
-        <VueWriter class="text-4xl font-bold text-center md:text-left" :array="arr" />
-        <h1>รับผลิตของรับไหว้งานเเต่ง งานบวช งานเกษียณอายุราชการ เเละงานมงคลอื่นๆ ตามออร์เดอร์ รับประกันคุณภาพสินค้าด้วยประสบการณ์ที่มากกว่า 20 ปี</h1>
+        <VueWriter class="font-Chonburi text-4xl font-bold text-center md:text-left" :array="arr" />
+        <h1 class="">รับผลิตของรับไหว้งานเเต่ง งานบวช งานเกษียณอายุราชการ เเละงานมงคลอื่นๆ ตามออร์เดอร์ รับประกันคุณภาพสินค้าด้วยประสบการณ์ที่มากกว่า 20 ปี</h1>
       </div>
       <div class="md:w-[40%] w-[80%] txet-center">
-
+        <img :src="img" alt="" class="rounded-xl">
     </div>
     </div>
     </div>
   </div>
-  <ConTact/>
+
 </template>
 
 <style scoped>

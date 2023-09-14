@@ -4,7 +4,7 @@
     class="flex fixed w-full items-center justify-between flex-wrap p-2 m-auto top-0 animated"> 
         <div class="container mx-auto flex justify-between items-center md:h-14">
             <div >
-                <h1 class="md:static absolute top-2.5 left-[30%]">เรือนเอกรุจต์</h1>
+                <h1 class="font-Chonburi md:static absolute top-2.5 left-[30%]">เรือนเอกรุจต์</h1>
             </div>
 
                 <ul class="dark:md:bg-inherit md:bg-inherit md:flex md:items-center text-center md:px-0 px-10 md:pb-0 pb-10 md:static absolute bg-[#EEEEEE] dark:bg-black md:w-auto w-full h-[30vh] md:py-0 py-10 top-0 duration-700 ease-in"
@@ -110,7 +110,7 @@ nav.scrolled  {
 .link-underline {
     border-bottom-width: 0;
     background-image: linear-gradient(transparent, transparent),
-        linear-gradient(#068fff, #068fff);
+        linear-gradient(#232F2F, #232F2F);
     background-size: 0 3px;
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@ nav.scrolled  {
 
 .link-underline-black {
     background-image: linear-gradient(transparent, transparent),
-        linear-gradient(#4477ce, #4477ce);
+        linear-gradient(#232F2F, #232F2F);
 }
 
 .link-underline:hover {
