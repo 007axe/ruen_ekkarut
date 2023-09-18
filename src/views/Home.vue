@@ -13,6 +13,7 @@ import TextRun from '../components/TextRun.vue';
 import Review from '../components/Review.vue';
 import ConTact from '../components/ConTact.vue';
 
+
 </script>
 
 <style>

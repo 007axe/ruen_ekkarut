@@ -1,7 +1,7 @@
 <template>
   <div id="contact" class="py-5" >
     <div class=" mx-auto flex flex-col justify-center" data-aos="fade-up" data-aos-duration="2000">
-      <h2 class="font-bold text-center mb-4 text-[#232F2F]" >ติดต่อ</h2>
+      <h1 class="text-center mb-4 text-[#232F2F]" >ติดต่อ</h1>
 
       <div class="container xl:flex mb-8 mx-auto xl:justify-between duration-700 ease-in" >
         <!-- ข้อมูลการติดต่อ -->

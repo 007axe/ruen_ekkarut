@@ -8,7 +8,7 @@
                 <input class="block mt-3 w-full h-10 rounded dark:bg-gray-800" type="password" placeholder="Password" v-model="password">
                 <p v-if="errMsg">{{ errMsg }}</p>
                 <button class="block mt-3 w-full h-10 bg-blue-500 rounded hover:bg-blue-900" @click="register">เข้าสู่ระบบ</button>
-                <RouterLink to="/register" class="mt-3 w-full flex justify-center items-center h-10 bg-blue-500 rounded hover:bg-blue-900">สมัครสมาชิก</RouterLink>
+                <!-- <RouterLink to="/register" class="mt-3 w-full flex justify-center items-center h-10 bg-blue-500 rounded hover:bg-blue-900">สมัครสมาชิก</RouterLink> -->
                 <p class="mt-3 text-center">หรือ</p>
                 <button class="text-black block mt-3 w-full h-10 bg-blue-100 rounded hover:bg-blue-500 " @click="signInWithGoogle">Sign In With Google</button>
             </div>

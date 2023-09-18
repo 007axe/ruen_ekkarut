@@ -11,8 +11,9 @@ import Vue3Marquee from 'vue3-marquee'
 
 const app = createApp(App)
 
-app.use(createPinia())
-app.use(router)
 app.use(VueWriter)
 app.use(Vue3Marquee)
+app.use(createPinia())
+app.use(router)
+
 app.mount('#app')
